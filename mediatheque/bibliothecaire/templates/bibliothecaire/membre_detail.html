@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre livre, notre média</title>
+</head>
+
+<body>
+    <h1>Notre Livre, notre média</h1>
+    <h2>{{membre.last_name}} {{membre.first_name}}</h2>
+    <p>{{membre.email}}</p>
+    <a href="{% url 'membres' %}">Retour à la liste des membres</a> - 
+    <a href="{% url 'membre_update' membre.id%}">Mettre à jour</a> -
+    <a href="{% url 'membre_delete' membre.id %}">Supprimer</a>
+</body>
+
+</html>
